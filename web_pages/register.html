@@ -4,11 +4,85 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>user Registration</title>
+<style>
+:root {
+--primary-color: #4CAF50;
+--primary-hover: #45a049;
+--text-color: #333;
+--light-text: #555;
+--border-color: #ddd;
+----bg-color: #f4f4f9;
+body{
+font-family: 'Segoe uI', Tahoma, Geneva, Verdana, sans-serif;
+background-color: var(--bg-color);
+margin: 0;
+padding: 2rem;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+}
+.registration-container {
+background: white;
+padding: 2.5rem;
+border-radius: 10px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+width: 100%;
+max-width: 450px;
+}
+
+h1 {
+text-align: center;
+color: var(--text-color);
+margin-bottom: 1.5rem;
+font-weight: 600;
+}
+.form-group {
+margin-bottom: 1.25rem;
+}
+label {
+display: block;
+margin-bottom: 0.5rem;
+color: var(--light-text);
+font-weight: 500;
+input[type="text"],
+input [type="email"],
+input[type="password"] {
+width: 100%;
+padding: 0.75rem;
+border: 1px solid var(--border-color);
+border-radius: px;
+box-sizing: border-box;
+font-size: 1rem;
+transition: border-color 0.3s;
+}
+
 </head>
 <body>
 <main class="registration-container">
 <h1>Create Account</h1>
 <form action="/register" method="POST" novalidate>
+<div class="form-group">
+<labe1 for="username">Username</1abe1>
+<input type="text" id="username" name="username" required
+placeholder="Enter your username">
+</div>
+<div class="form-group">
+<label for="email">Email Address</label>
+<input type="email" id="email" name="email" required
+placeholder=" your.email@example.com ">
+</div>
+<div class="form-group">
+<<label for="password">Password</label>
+<input type="password" id="password" name="password" required
+placeholder="At least 8 characters" minlength="8">
+</div>
+<div class="form-group">
+<labe1 for="confirm-password">Confirm Password</1abe1>
+<<input type="password" id="confirm-password" name="confirm-password
+placeholder="Re-enter your password">
+</div>
+<button type="submit">sign Up</button>
 <div class="form-group">
 <labe1 for="username">username</labe1>
 <input type="text" id="username" name="username" required
@@ -21,13 +95,14 @@ placeholder=" your.email@example.com ">
 </div>
 <div class="form-group">
 <labe1 for="password">Password</1abel>
-<input type="p
-="password" id="password" name="password" required
+<input type="password" id="password" name="password" required
 placeholder="At least 8 characters" minlength="8">
 </div>
 <div class="form-group">
-<label for="c
-r="confirm-password">Confirm Password</1abe1>
+<label for="confirm-password">Confirm Password</1abe1>
 <input type="password" id="confirm-password" name="confirm-passwo
 placeholder="Re-enter your password">
 </div>
+
+
+<button type="submit">Sign Up</button>
